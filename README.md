@@ -39,3 +39,7 @@ npm run build
 ENV_PATH=/path/to/env/.env pm2 restart ecosystem.config.js
 
 node ace migration:run --force
+
+## Important Note
+
+Please be aware that this is a very minimal starter kit. While it provides basic functionalities such as user login, registration, email verification, and password management, it does not include advanced security features like rate limiting. For instance, there is no built-in mechanism to prevent unlimited password reset email calls. If you anticipate high traffic or potential abuse, you might need to add a rate limiter or similar security measures to protect your application.
