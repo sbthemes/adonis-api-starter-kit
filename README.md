@@ -21,10 +21,13 @@ Please refer to the "How to use" section for detailed setup instructions.
 -   Login
 -   Registration
 -   Email verification
+-   Middleware for email verified users only
 -   Forgot password
 -   Reset password
+-   MJML for mail templates
 
 ## Deploy script
+
 ```
 cd /path/to/your/project/folder
 
