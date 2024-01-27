@@ -25,12 +25,11 @@ Please refer to the "How to use" section for detailed setup instructions.
 -   Reset password
 
 ## Deploy script
-
-cd /home/forge/project-folder
+```
+cd /path/to/your/project/folder
 
 git pull origin main
-
-<!-- git pull origin $FORGE_SITE_BRANCH -->
+# Laravel Forge Users: git pull origin $FORGE_SITE_BRANCH
 
 npm install --no-save
 
@@ -39,6 +38,7 @@ npm run build
 ENV_PATH=/path/to/env/.env pm2 restart ecosystem.config.js
 
 node ace migration:run --force
+```
 
 ## Important Note
 
