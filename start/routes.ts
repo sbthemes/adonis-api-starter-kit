@@ -13,9 +13,16 @@ router
 
 router
     .group(() => {
+        // routes which require authentication
         router.get('/auth/user', [AuthController, 'user'])
         router.post('/auth/logout', [AuthController, 'logout'])
         router.post('/auth/email/verify/resend', [AuthController, 'resendVerificationEmail'])
+
+        router
+            .group(() => {
+                // routes which require verified email
+            })
+            .use(middleware.verifiedEmail())
     })
     .use(
         middleware.auth({
