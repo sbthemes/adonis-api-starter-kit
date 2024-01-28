@@ -1,4 +1,4 @@
-# Adonis V6 API Starter Kit
+# AdonisJS V6 API Starter Kit
 
 "AdonisJS V6 API Starter Kit" is a minimal and ready-to-use api starter kit built with AdonisJS V6.
 
