@@ -1,6 +1,6 @@
-# AdonisJS V6 API Starter Kit
+# AdonisJS v6 API Starter Kit
 
-"AdonisJS V6 API Starter Kit" is a minimal and ready-to-use api starter kit built with AdonisJS V6.
+"AdonisJS v6 API Starter Kit" is a minimal and ready-to-use api starter kit built with AdonisJS v6.
 
 This starter kit is using access tokens and comes with pre-configured features such as user login, registration, email verification, and password management (forgot and reset password). It is designed to help you kickstart your AdonisJS projects, allowing you to focus on what makes your application unique.
 
