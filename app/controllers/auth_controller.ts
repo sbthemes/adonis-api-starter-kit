@@ -15,7 +15,12 @@ export default class AuthController {
                     password: vine.string(),
                 })
             )
-            .validate(request.all())
+            .validate(request.all(), {
+                messagesProvider: new SimpleMessagesProvider({
+                    'required': 'The {{ field }} field is required.',
+                    'email.email': 'The email must be a valid email address.',
+                }),
+            })
 
         try {
             const user = await User.verifyCredentials(data.email, data.password)
