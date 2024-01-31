@@ -26,7 +26,11 @@ export default class AuthController {
             const user = await User.verifyCredentials(data.email, data.password)
             const token = await User.authTokens.create(user, ['*'], { expiresIn: '1 year' })
 
-            return token
+            if (!token.value!.release()) {
+                return response.unprocessableEntity({ error: 'Invalid email or password.' })
+            }
+
+            return { token: token.value!.release() }
         } catch {
             return response.unprocessableEntity({ error: 'Invalid email or password.' })
         }
