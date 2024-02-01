@@ -9,7 +9,8 @@ This kit is designed to be a backend solution that can be seamlessly integrated 
 Please refer to the "How to use" section for detailed setup instructions.
 
 ## Frontend frameworks
-- NextJS: https://github.com/sbthemes/nextjs-starter-kit
+
+-   NextJS: https://github.com/sbthemes/nextjs-starter-kit
 
 ## How to use
 
