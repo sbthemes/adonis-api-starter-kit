@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: 'baboost',
+            name: 'adonis-starterkit',
             script: './build/server.js',
             instances: 'max',
             exec_mode: 'cluster',
