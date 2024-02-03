@@ -83,6 +83,10 @@ export default class AuthController {
 
     async resendVerificationEmail({ auth, response }: HttpContext) {
         try {
+            if (auth.user!.emailVerifiedAt) {
+                return response.unprocessableEntity({ error: 'Your email is already verified.' })
+            }
+
             await mail.send(new VerifyEmailNotification(auth.user!))
 
             return {
