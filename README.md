@@ -42,7 +42,7 @@ npm install --no-save
 
 npm run build
 
-ENV_PATH=/path/to/env/.env pm2 restart ecosystem.config.js
+ENV_PATH=/path/to/env pm2 restart ecosystem.config.js
 
 node ace migration:run --force
 ```
