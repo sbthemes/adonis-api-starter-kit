@@ -44,7 +44,7 @@ npm run build
 
 ENV_PATH=/path/to/env pm2 restart ecosystem.config.js
 
-node ace migration:run --force
+node ace migration:run --force --disable-locks
 ```
 
 ## Important Note
